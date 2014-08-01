@@ -1,0 +1,15 @@
+
+.login-container
+  .login(ng-controller="AuthCtrl")
+    h1.logo 東方樂知
+    h3.subtitle 登录
+    form(ng-submit="submitUserAuth(credentials)")
+      .ui.left.icon.input.login-item
+        input(ng-model="credentials.email", placeholder="邮箱")
+        i.mail.icon
+      br
+      .ui.left.icon.input.login-item
+        input(ng-model="credentials.password", type="password", placeholder="密码")
+        i.lock.icon
+      br
+      input(type="submit", value="登录").ui.button.lezhi-button.login-item
